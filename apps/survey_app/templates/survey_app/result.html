@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result page</title>
+	<style>
+		.top{
+			margin-left: 40%;
+			margin-top: 10%;
+
+		}
+		h1{
+			margin-left:20%;
+			margin-top: 10%;
+			text-decoration: underline;
+		}
+
+		p{
+			font-size:30px;
+		}
+	</style>
+</head>
+<body>
+		<h1>Submitted Info:</h1>
+		<div class="top">
+			<p>Name: {{request.session.name}}</p>
+			<p>Location: {{request.session.location}}</p>
+			<p>Language: {{request.session.language}}</p>
+			<p>Comment: {{request.session.comment}}</p>
+		</div>
+
+		
+</body>
+</html>
